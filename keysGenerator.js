@@ -9,10 +9,10 @@ const keyPrivacyTypes = {
 const keyExtension = '.pem'
 
 async function generateKeys(keysPath) {
-  const keyGen = new NodeRSA().generateKeyPair();
+  const generateKeyPair = new NodeRSA().generateKeyPair();
   const keys = Object
     .values(keyPrivacyTypes)
-    .map(keyPrivacyType => ({[keyPrivacyType]: keyGen.exportKey(keyPrivacyType)}))
+    .map(keyPrivacyType => ({[keyPrivacyType]: generateKeyPair.exportKey(keyPrivacyType)}))
 
   try {
     await fs.mkdir(keysPath, {recursive: true}, () => {

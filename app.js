@@ -1,5 +1,5 @@
 const NodeRSA = require('node-rsa'),
-      fs = require('fs');
+  fs = require('fs');
 
 function execute(mode, keyPath) {
   const rsaKey = new NodeRSA();
@@ -10,7 +10,7 @@ function execute(mode, keyPath) {
   const message = fs.readFileSync("./data.txt", "utf8");
   let res;
 
-  switch (+mode) {
+  switch (mode) {
     case 2: // Encrypt with public key
       res = rsaKey.encrypt(message, 'base64');
       break;
