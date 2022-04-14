@@ -1,0 +1,24 @@
+{
+  "name": "asymmetric-encryption-rsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "keysGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klltx/asymmetric-encryption-rsa.git"
+  },
+  "author": "klltx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klltx/asymmetric-encryption-rsa/issues"
+  },
+  "homepage": "https://github.com/klltx/asymmetric-encryption-rsa#readme",
+  "dependencies": {
+    "node-rsa": "^1.1.1",
+    "prompt": "^1.2.2"
+  }
+}
